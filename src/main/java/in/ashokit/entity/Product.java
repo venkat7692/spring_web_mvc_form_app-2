@@ -2,14 +2,16 @@ package in.ashokit.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "products")
 public class Product {
 	@Id
 private Integer productId;
 private String ProductName;
 private Double productPrice;
-
+//1234512345
 public Integer getProductId() {
 	return productId;
 }
